@@ -1,0 +1,43 @@
+{
+  "name": "git-warden",
+  "version": "0.1.0",
+  "description": "CLI wrapper that asks confirmation before dangerous git commands after long terminal idle time.",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "git-warden": "index.js",
+    "git-guard": "index.js"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "test": "node --check index.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "git",
+    "cli",
+    "guard",
+    "productivity",
+    "safety"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maofao/git-warden.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maofao/git-warden/issues"
+  },
+  "homepage": "https://github.com/maofao/git-warden#readme",
+  "engines": {
+    "node": ">=16"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "",
+  "license": "MIT"
+}
